@@ -1,0 +1,59 @@
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <title>Concessions POS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form>
+      <table style="margin-left: auto; margin-right: auto; border: 2px solid black;">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pizza</td>
+            <td>$2.00</td>
+            <td><input type="number" max="99" id="Pizza" name="Pizza"></td>
+          </tr>
+          <tr>
+            <td>Nachos</td>
+            <td>$1.50</td>
+            <td><input type="number" max="99" id="Nachos" name="Nachos"></td>
+          </tr>
+          <tr>
+            <td>Hotdog</td>
+            <td>$2.50</td>
+            <td><input type="number" max="99" id="Hotdog" name="Hotdog"></td>
+          </tr>
+          <tr>
+            <td>Candy Bar</td>
+            <td>$1.25</td>
+            <td><input type="number" max="99" id="CandyBar" name="CandyBar"></td>
+          </tr>
+          <tr>
+            <td>Popcorn</td>
+            <td>$1.25</td>
+            <td><input type="number" max="99" id="Popcorn" name="Popcorn"></td>
+          </tr>
+          <tr>
+            <td>Soda</td>
+            <td>$2.00</td>
+            <td><input type="number" max="99" id="Soda" name="Soda"></td>
+          </tr>
+          <tr>
+            <td id = "Subtotal"></td>
+            <td id = "FinalTotal"></td>
+            <td><button onclick="calculateTotal()">Submit Order</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
+
