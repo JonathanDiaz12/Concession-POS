@@ -9,12 +9,17 @@ function calculateTotal() {
 
     // Calculate the total
     let total = (pizza * 2.00) + (nachos * 1.50) + (hotdog * 2.50) + (candyBar * 1.25) + (popcorn * 1.25) + (soda * 2.00);
+    let finalTotal = total+(total*0.0825);
        // Update the subtotal element
        document.getElementById('Subtotal').innerHTML = `Subtotal: $${total.toFixed(2)}`;
+        document.getElementById('FinalTotal').innerHTML = `Final Total: $${finalTotal.toFixed(2)}`;
 }
 document.querySelectorAll('input[type="number"]').forEach(input => {
     input.addEventListener('input', calculateTotal);
 });
-function resetButton (){
-    document.getElementById("Subtotal");
+function resetTotals() {
+    let total = "Final Total: $0.00";
+    let Subtotal = "Subtotal: $0.00";
+    document.getElementById('Subtotal').innerHTML = Subtotal;
+    document.getElementById('FinalTotal').innerHTML = total;
 }

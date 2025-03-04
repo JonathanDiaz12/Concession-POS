@@ -1,4 +1,26 @@
-th ,td {
+th ,td, table {
     border: 2px, black, solid;
     text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    background-color:lightgrey
+
+}
+button {
+    margin-right :auto;
+}
+h1{
+    text-align: center;
+    margin-top:120;
+    margin-bottom: 0;
+    color: antiquewhite;
+}
+body {
+    padding:0;
+    margin:0;
+    background-color: #002858;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(Images/background.svg)
+    
 }
