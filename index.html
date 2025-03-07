@@ -3,7 +3,7 @@
   <head>
     <title>Concessions POS</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body >
     <h1>Concessions!</h1>
@@ -20,39 +20,39 @@
         <tbody>
           <tr>
             <td>Pizza</td>
-            <td><img src = "Images/pizza.png" alt ="Picture of a pizza" /></td>
+            <td><input type ='image' src = "Images/pizza.png" alt ="Picture of a pizza" onclick ="AddQuant('Pizza',event)"/></td>
             <td>$2.00</td>
-            <td><input type="number" max="99" id="Pizza" name="Pizza"></td>
+            <td><input type="number" max="99" min = "0" id="Pizza" name="Pizza"></td>
           </tr>
           <tr>
             <td>Nachos</td>
-            <td><img src = "Images/Nachos.png" alt ="Picture of nachos" /></td>
+            <td><input type= "image" src = "Images/Nachos.png" alt ="Picture of nachos" onclick ="AddQuant('Nachos',event)" /></td>
             <td>$1.50</td>
-            <td><input type="number" max="99" id="Nachos" name="Nachos"></td>
+            <td><input type="number" max="99" min = "0" id="Nachos" name="Nachos"></td>
           </tr>
           <tr>
             <td>Hotdog</td>
-            <td></td>
+            <td><input type = "image" src ="Images/HotDog.jpg" alt = "pic of hotdog" onclick ="AddQuant('HotDog',event)" /></td>
             <td>$2.50</td>
-            <td><input type="number" max="99" id="Hotdog" name="Hotdog"></td>
+            <td><input type="number" max="99" min = "0" id="Hotdog" name="Hotdog"></td>
           </tr>
           <tr>
             <td>Candy Bar</td>
-            <td></td>
+            <td><input type = "image" src = "Images/CandyBar.jpg" alt = "pic of candy" onclick ="AddQuant('CandyBar',event)" /></td>
             <td>$1.25</td>
-            <td><input type="number" max="99" id="CandyBar" name="CandyBar"></td>
+            <td><input type="number" max="99" min = "0" id="CandyBar" name="CandyBar"></td>
           </tr>
           <tr>
             <td>Popcorn</td>
-            <td></td>
+            <td><input type = "image" src ="Images/PopCorn.jpg" alt = "Popcorn" onclick ="AddQuant('Popcorn',event)"/> </td>
             <td>$1.25</td>
-            <td><input type="number" max="99" id="Popcorn" name="Popcorn"></td>
+            <td><input type="number" max="99" min = "0" id="Popcorn" name="Popcorn"></td>
           </tr>
           <tr>
             <td>Soda</td>
-            <td></td>
+            <td><input type = "image" src ="Images/Soft_Drink.png" alt = "Soda" onclick ="AddQuant('Soda',event)"/></td>
             <td>$2.00</td>
-            <td><input type="number" max="99" id="Soda" name="Soda"></td>
+            <td><input type="number" max="99" min = "0" id="Soda" name="Soda"></td>
           </tr>
           <tr>
             <td style ="border: hidden">&nbsp;

@@ -23,3 +23,11 @@ function resetTotals() {
     document.getElementById('Subtotal').innerHTML = Subtotal;
     document.getElementById('FinalTotal').innerHTML = total;
 }
+function AddQuant(itemID,event) {
+    event.preventDefault();
+    let input = document.getElementById(itemID);
+    if (input) {
+        input.stepUp(); // Increments the number
+        calculateTotal(); // Update the total after incrementing
+    }
+}
